@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers\home;
 
+use App\Courses;
 use Illuminate\Http\Request;
 use App\Http\Controllers\Controller;
 
@@ -15,7 +16,8 @@ class IndexController extends Controller
 
     public function list()
     {
-        return view("venue/list");
+        $courses=Courses::all();
+        return view("venue/list",compact('courses'));
     }
 
     public function choice()

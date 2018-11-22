@@ -1,20 +1,8 @@
-*{
-    margin: 0;
-    padding: 0;
-}
+*{ margin: 0; padding: 0;}
+a { text-decoration: none;}
+li { list-style: none;}
 
-a {
-    text-decoration: none;
-}
-
-li {
-    list-style: none;
-}
-
-.inner {
-    width: 1150px;
-    margin: 0 auto;
-}
+.inner { width: 1150px; margin: 0 auto;}
 /*导航开始*/
 
 .headers {

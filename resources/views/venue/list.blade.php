@@ -41,12 +41,10 @@
                         <h4 style="font-size: 18px; font-weight: 900;">第一章 </h4>
                         <p> 简介：本教程带领大家轻松学习PHP基本知识，了解PHP中的变量，变量的类型，常量等 概念，认识PHP中的运算符，通过本教程</p>
                         <ul class="list-group">
-                            <a href="#"><li class="list-group-item"><i class="glyphicon glyphicon-leaf"></i>Cras justo odio</li></a>
-                            <a href="#"><li class="list-group-item"><i class="glyphicon glyphicon-leaf"></i>Cras justo odio</li></a>
-                            <a href="#"><li class="list-group-item"><i class="glyphicon glyphicon-leaf"></i>Cras justo odio</li></a>
-                            <a href="#"><li class="list-group-item"><i class="glyphicon glyphicon-leaf"></i>Cras justo odio</li></a>
-                            <a href="#"><li class="list-group-item"><i class="glyphicon glyphicon-leaf"></i>Cras justo odio</li></a>
-                        </ul>
+                        @foreach($courses as $coursess)
+                            <a href="#"><li class="list-group-item"><i class="glyphicon glyphicon-leaf"></i>{{$coursess->name}}</li></a>
+                            @endforeach
+                            </ul>
                     </div>
                 </div>
                 <div class="panel panel-default">

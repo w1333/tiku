@@ -4,7 +4,8 @@ namespace App;
 
 use Illuminate\Database\Eloquent\Model;
 
-class Type extends Model
+class Courses extends Model
 {
     //
+    protected $guarded=['id'];//黑名单
 }

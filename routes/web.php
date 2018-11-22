@@ -16,10 +16,10 @@ Route::get('/', function () {
 });
 
 //首页
-Route::get('/venue/index','home\IndexController@index');
+Route::get('/venue/index','home\CoursesController@index');
 
 //列表页
-Route::get('/venue/list','home\IndexController@list');
+Route::get('/venue/list/{id}','home\IndexController@list');
 
 //选择页
 Route::get('/venue/choice','home\IndexController@choice');

@@ -35,9 +35,9 @@
             <div class="col-md-10 ">
                 <div class="swiper-container">
                     <div class="swiper-wrapper">
-                        <div class="swiper-slide"><img src="/home/images/img1.jpg" /></div>
-                        <div class="swiper-slide"><img src="/home/images/img2.jpg" /></div>
-                        <div class="swiper-slide"><img src="/home/images/img3.jpg" /></div>
+                        @foreach ($lunbo as $lunbos)
+                            <div class="swiper-slide"><img src="/home/images/{{$lunbos->pic}}" /></div>
+                        @endforeach
                     </div>
                     <!-- 如果需要分页器 -->
                     <div class="swiper-pagination"></div>
@@ -97,208 +97,28 @@
                 </div>
             </div>
             <div>
-                <div class="col-md-2 index-card-container">
-                    <a href="##">
-                        <div class="course-card-top">
-                            <img src="/home/images/5bc3f1420001abf206000338.jpg" />
-                            <div class="course-label">
-                                <label>Java</label>
-                                <label>Android</label>
-                            </div>
-                        </div>
-                        <div class="course-card-content">
-                            <h5 class="course-card-name">Socket网络编程进阶与实战</h5>
-                            <div class="clearfix course-card-bottom">
-                                <div class="course-card-info">
-                                    <span>实战</span>
-                                    <span>中级</span>
+                @foreach ($courses as $coursess)
+                    <div class="col-md-2 index-card-container">
+                        <a href="/venue/list/{{$coursess->id}}">
+                            <div class="course-card-top">
+                                <img src="/home/images/{{$coursess->pic}}" />
+                                <div class="course-label">
+                                    <label>Java</label>
+                                    <label>Android</label>
                                 </div>
                             </div>
-                        </div>
-                    </a>
-                </div>
-                <div class="col-md-2 index-card-container">
-                    <a href="##">
-                        <div class="course-card-top">
-                            <img src="/home/images/5bc3f1420001abf206000338.jpg" />
-                            <div class="course-label">
-                                <label>Java</label>
-                                <label>Android</label>
-                            </div>
-                        </div>
-                        <div class="course-card-content">
-                            <h5 class="course-card-name">Socket网络编程进阶与实战</h5>
-                            <div class="clearfix course-card-bottom">
-                                <div class="course-card-info">
-                                    <span>实战</span>
-                                    <span>中级</span>
+                            <div class="course-card-content">
+                                <h5 class="course-card-name">{{$coursess->name}}</h5>
+                                <div class="clearfix course-card-bottom">
+                                    <div class="course-card-info">
+                                        <span>实战</span>
+                                        <span>中级</span>
+                                    </div>
                                 </div>
                             </div>
-                        </div>
-                    </a>
-                </div>
-                <div class="col-md-2 index-card-container">
-                    <a href="##">
-                        <div class="course-card-top">
-                            <img src="/home/images/5bc3f1420001abf206000338.jpg" />
-                            <div class="course-label">
-                                <label>Java</label>
-                                <label>Android</label>
-                            </div>
-                        </div>
-                        <div class="course-card-content">
-                            <h5 class="course-card-name">Socket网络编程进阶与实战</h5>
-                            <div class="clearfix course-card-bottom">
-                                <div class="course-card-info">
-                                    <span>实战</span>
-                                    <span>中级</span>
-                                </div>
-                            </div>
-                        </div>
-                    </a>
-                </div>
-                <div class="col-md-2 index-card-container">
-                    <a href="##">
-                        <div class="course-card-top">
-                            <img src="/home/images/5bc3f1420001abf206000338.jpg" />
-                            <div class="course-label">
-                                <label>Java</label>
-                                <label>Android</label>
-                            </div>
-                        </div>
-                        <div class="course-card-content">
-                            <h5 class="course-card-name">Socket网络编程进阶与实战</h5>
-                            <div class="clearfix course-card-bottom">
-                                <div class="course-card-info">
-                                    <span>实战</span>
-                                    <span>中级</span>
-                                </div>
-                            </div>
-                        </div>
-                    </a>
-                </div>
-                <div class="col-md-2 index-card-container">
-                    <a href="##">
-                        <div class="course-card-top">
-                            <img src="/home/images/5bc3f1420001abf206000338.jpg" />
-                            <div class="course-label">
-                                <label>Java</label>
-                                <label>Android</label>
-                            </div>
-                        </div>
-                        <div class="course-card-content">
-                            <h5 class="course-card-name">Socket网络编程进阶与实战</h5>
-                            <div class="clearfix course-card-bottom">
-                                <div class="course-card-info">
-                                    <span>实战</span>
-                                    <span>中级</span>
-                                </div>
-                            </div>
-                        </div>
-                    </a>
-                </div>
-            </div>
-            <div>
-                <div class="col-md-2 index-card-container">
-                    <a href="##">
-                        <div class="course-card-top">
-                            <img src="/home/images/5bc3f1420001abf206000338.jpg" />
-                            <div class="course-label">
-                                <label>Java</label>
-                                <label>Android</label>
-                            </div>
-                        </div>
-                        <div class="course-card-content">
-                            <h5 class="course-card-name">Socket网络编程进阶与实战</h5>
-                            <div class="clearfix course-card-bottom">
-                                <div class="course-card-info">
-                                    <span>实战</span>
-                                    <span>中级</span>
-                                </div>
-                            </div>
-                        </div>
-                    </a>
-                </div>
-                <div class="col-md-2 index-card-container">
-                    <a href="##">
-                        <div class="course-card-top">
-                            <img src="/home/images/5bc3f1420001abf206000338.jpg" />
-                            <div class="course-label">
-                                <label>Java</label>
-                                <label>Android</label>
-                            </div>
-                        </div>
-                        <div class="course-card-content">
-                            <h5 class="course-card-name">Socket网络编程进阶与实战</h5>
-                            <div class="clearfix course-card-bottom">
-                                <div class="course-card-info">
-                                    <span>实战</span>
-                                    <span>中级</span>
-                                </div>
-                            </div>
-                        </div>
-                    </a>
-                </div>
-                <div class="col-md-2 index-card-container">
-                    <a href="##">
-                        <div class="course-card-top">
-                            <img src="/home/images/5bc3f1420001abf206000338.jpg" />
-                            <div class="course-label">
-                                <label>Java</label>
-                                <label>Android</label>
-                            </div>
-                        </div>
-                        <div class="course-card-content">
-                            <h5 class="course-card-name">Socket网络编程进阶与实战</h5>
-                            <div class="clearfix course-card-bottom">
-                                <div class="course-card-info">
-                                    <span>实战</span>
-                                    <span>中级</span>
-                                </div>
-                            </div>
-                        </div>
-                    </a>
-                </div>
-                <div class="col-md-2 index-card-container">
-                    <a href="##">
-                        <div class="course-card-top">
-                            <img src="/home/images/5bc3f1420001abf206000338.jpg" />
-                            <div class="course-label">
-                                <label>Java</label>
-                                <label>Android</label>
-                            </div>
-                        </div>
-                        <div class="course-card-content">
-                            <h5 class="course-card-name">Socket网络编程进阶与实战</h5>
-                            <div class="clearfix course-card-bottom">
-                                <div class="course-card-info">
-                                    <span>实战</span>
-                                    <span>中级</span>
-                                </div>
-                            </div>
-                        </div>
-                    </a>
-                </div>
-                <div class="col-md-2 index-card-container">
-                    <a href="##">
-                        <div class="course-card-top">
-                            <img src="/home/images/5bc3f1420001abf206000338.jpg" />
-                            <div class="course-label">
-                                <label>Java</label>
-                                <label>Android</label>
-                            </div>
-                        </div>
-                        <div class="course-card-content">
-                            <h5 class="course-card-name">Socket网络编程进阶与实战</h5>
-                            <div class="clearfix course-card-bottom">
-                                <div class="course-card-info">
-                                    <span>实战</span>
-                                    <span>中级</span>
-                                </div>
-                            </div>
-                        </div>
-                    </a>
-                </div>
+                        </a>
+                    </div>
+                @endforeach
             </div>
         </div>
     </div>
@@ -451,16 +271,11 @@
                         <span class="prev"></span>
                         <div>
                             <dl id="roll">
-                                <dd>
-                                    <h3>sdadsadasd111</h3>
-                                </dd>
-                                <dd>
-                                    <h3>sdadsadasd222</h3></dd>
-                                <dd>
-                                    <h3>sdadsadasd333</h3></dd>
-                                <dd>
-                                    <h3>sdadsadasd4444</h3></dd>
-
+                                @foreach ($lunbo as $lunbos)
+                                    <dd>
+                                        <h3><img src="/home/images/{{$lunbos->pic}}" /></h3>
+                                    </dd>
+                                @endforeach
                             </dl>
                         </div>
                         <span class="next">></span>
